@@ -1,0 +1,196 @@
+/*MAPA de botones que te lleven a su respectiva seccion en caso de ser una onepage*/
+
+$secciones: (
+  radioshow: grey ,
+  lanzamientos: black ,
+  giras: white ,
+  novedades: grey
+) ;
+
+@each $seccion, $color in $secciones {
+  .btn--#{$seccion} {
+    background-color: $color ;
+  }
+}
+
+/*EXTEND de botones para enviar el mensaje o borrar el mensaje partiendo de un boton por defecto*/
+
+.btn {
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  text-align: center;
+  color: black;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.btn-enviar {
+  @extend .btn ;
+  background-color: green;
+  color: yellow;
+  border-color: pink;
+}
+
+.btn-borrar {
+  @extend .btn ;
+  background-color: red;
+  color: orange;
+  border-color: blue;
+}
+
+/*MIXIN para usar cards en 2 secciones distintas, pero unas con fondo negro, letra blanca, 
+letra de 15px y de 20rem de ancho y otras con fondo blanco, letra negra, letra de 13px 
+y 18 rem de ancho. Cada una en su respectiva seccion*/
+
+@mixin cards ($color-texto , $background-color , $font-size , $ancho)
+{
+  background-color: $background-color ;
+  color: $color-texto ;
+  font-size: $font-size ;
+  width: $ancho;
+  height: 40px;
+  text-align: center;
+}
+
+.cards-radioshow {
+  @include cards (white, black, 15px, 20rem) ;
+}
+
+.cards-lanzamientos {
+  @include cards (black, white, 13px, 18rem
+  ) ;
+}
+
+
+/* <!-- CONTENEDOR DE CAJAS RESPONSIVAS -->
+  <section>
+    <div class="container mb-5" id="contenedorPrincipal"> 
+      <div class="row">
+        <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 mt-3">
+          <center>
+            <div id="contenedor1"></div>
+          </center>
+        </div>
+        <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 mt-3">
+          <center>
+            <div id="contenedor2"></div>
+          </center>
+        </div>
+        <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 mt-3">
+          <center>
+            <div id="contenedor3"></div>
+          </center>
+        </div>
+        <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 mt-3">
+          <center>
+            <div id="contenedor4"></div>
+          </center>
+        </div>
+        <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 mt-3">
+          <center>
+            <div id="contenedor5"></div>
+          </center>
+        </div>
+        <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 mt-3">
+          <center>
+            <div id="contenedor6"></div>
+          </center>
+        </div>
+      </div>
+    </div>
+  </section>
+ */
+
+ /* #contenedor1 {
+  border: solid white 1px;
+  width: 33vw;
+  height: 26vw;
+}
+#contenedor2 {
+  border: solid white 1px;
+  width: 33vw;
+  height: 26vw;
+}
+#contenedor3 {
+  border: solid white 1px;
+  width: 33vw;
+  height: 26vw;
+}
+#contenedor4 {
+  border: solid white 1px;
+  width: 33vw;
+  height: 26vw;
+}
+#contenedor5 {
+  border: solid white 1px;
+  width: 33vw;
+  height: 26vw;
+}
+#contenedor6 {
+  border: solid white 1px;
+  width: 33vw;
+  height: 26vw;
+} */
+
+/* #contenedor1 {
+  border: solid white 1px;
+  width: 33vw;
+  height: 26vw;
+}
+#contenedor2 {
+  border: solid white 1px;
+  width: 33vw;
+  height: 26vw;
+}
+#contenedor3 {
+  border: solid white 1px;
+  width: 33vw;
+  height: 26vw;
+}
+#contenedor4 {
+  border: solid white 1px;
+  width: 33vw;
+  height: 26vw;
+}
+#contenedor5 {
+  border: solid white 1px;
+  width: 33vw;
+  height: 26vw;
+}
+#contenedor6 {
+  border: solid white 1px;
+  width: 33vw;
+  height: 26vw;
+} */
+
+/* #contenedor1 {
+  border: solid white 1px;
+  width: 27vw;
+  height: 20vw;
+}
+#contenedor2 {
+  border: solid white 1px;
+  width: 27vw;
+  height: 20vw;
+}
+#contenedor3 {
+  border: solid white 1px;
+  width: 27vw;
+  height: 20vw;
+}
+#contenedor4 {
+  border: solid white 1px;
+  width: 27vw;
+  height: 20vw;
+}
+#contenedor5 {
+  border: solid white 1px;
+  width: 27vw;
+  height: 20vw;
+}
+#contenedor6 {
+  border: solid white 1px;
+  width: 27vw;
+  height: 20vw;
+} */

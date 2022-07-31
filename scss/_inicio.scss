@@ -1,0 +1,38 @@
+section {
+  div {
+    h1 {
+      &#tituloNovedades { 
+        color: $color-secundario; 
+      }
+      &#tituloLanzamientos { 
+        color: $color-secundario; 
+      }
+    }
+  }
+}
+
+section {
+  div {
+    &#contenedorCardsnovedades {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  div {
+    .card {
+      border: solid 0.5px rgb(54, 54, 54);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: all ease-out 0.2s;
+      background-color: black;
+      box-shadow: 10px 10px 12px -8px rgba(0,0,0,0.75);
+      -webkit-box-shadow: 10px 10px 12px -8px rgba(43, 43, 43, 0.75);
+      -moz-box-shadow: 10px 10px 12px -8px rgba(0,0,0,0.75);
+    }
+    .card:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+  }
+}

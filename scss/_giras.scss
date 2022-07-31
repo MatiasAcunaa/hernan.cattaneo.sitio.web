@@ -1,0 +1,21 @@
+section {
+  div {
+    h1 {
+      &#tituloGiras { 
+        color: $color-secundario; 
+      }
+    }
+  }
+  div {
+    &#seccionGiras {
+      table {
+        th {
+          color: $color-texto;
+        }
+        td {
+          color: $color-texto;
+        }
+      }
+    }
+  }
+}

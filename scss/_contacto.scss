@@ -1,0 +1,44 @@
+section {    
+  div {
+    h1 {
+      &#tituloContacto {
+        color: $color-texto;
+      }
+    }
+    p {
+      color: $color-texto
+    }
+  }
+  }
+  div {
+    .textoContacto { 
+      border-bottom: solid rgb(255, 255, 255) 0.1rem ;
+      display: flex;
+      align-content: center;
+      justify-content: center; 
+      }
+    }
+  div {
+    label {
+      &.form-label {
+        color: $color-texto;
+      }
+    }
+  }
+  div {
+    &#seccionContacto {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 2rem;
+      margin-bottom: 4rem;
+    }
+  }
+  p {
+    color: $color-texto;
+  }
+  h3 {
+    color: $color-texto;
+  }
+  
+  
