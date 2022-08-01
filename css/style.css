@@ -25,6 +25,9 @@ header nav#noIndex {
   div#contenedorCardsnovedades {
     
   }
+  img#imgCarrusel {
+    height: 20rem;
+  }
 }
 
 /*Mobil pequeño*/
