@@ -8,10 +8,6 @@ padding: 0;
 box-sizing: border-box;
 list-style: none;
 }
-header nav#noIndex {
-  background-color: #FFFFFF;
-  background-image: linear-gradient(105deg, #000000 0%, #010006 50%, #00032e 190%);
-}
 
 /*Mobil muy pequeño*/
 
